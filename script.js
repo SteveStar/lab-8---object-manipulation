@@ -2,9 +2,12 @@ student = {
     name: "Steve",
     age: 23,
     enrolled: true,
-    courses: ["Web Dev", "Javascript", "Algorithms", "Databases"],
+    courses: ["Web Dev", " Javascript", " Algorithms", " Databases"],
     studentInfo: function() {
-        console.log(`Hi, my name is ${this.name}, I'm ${this.age}, I'm taking these classes: ${this.courses}. And am I enrolled?: ${this.enrolled}`);
+        console.log(`\nStudent name: ${this.name}\nStudent age: ${this.age}\nCurrent enrolled classes: ${this.courses}\nis enrolled?: ${this.enrolled}`);
     }
 }
 
+console.log(`My name is ${student.name} and I am ${student.age} years old`);
+
+student.studentInfo();
