@@ -19,4 +19,7 @@ let studentString = '{"name": "Steve", "age": 23, "enrolled": true, "courses": [
 
 console.log(studentString);
 
+//JSON -> OBJECT
+let studentJSON = JSON.parse(studentString);
 
+console.log(studentJSON);
