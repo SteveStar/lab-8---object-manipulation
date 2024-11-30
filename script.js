@@ -3,7 +3,7 @@ student = {
     name: "Steve",
     age: 23,
     enrolled: true,
-    courses: ["Web Dev", " Javascript", " Algorithms", " Databases"],
+    courses: ["Web Dev", "Javascript", "Algorithms", "Databases"],
     studentInfo: function() {
         console.log(`\nStudent name: ${this.name}\nStudent age: ${this.age}\nCurrent enrolled classes: ${this.courses}\nis enrolled?: ${this.enrolled}\n`);
     }
@@ -28,8 +28,8 @@ console.log(studentJSON);
 
 StudentDestruc(student);
 
-function StudentDestruc({name, age, courses}) {
-    const message = `\nMy name is ${name}, I'm ${age} years old and my course list is: ${courses}.\n`;
+function StudentDestruc({name, courses}) {
+    const message = `\nMy name is ${name}, and my course list is: ${courses}.\n`;
     console.log(message);
 }
 
@@ -39,3 +39,13 @@ let [first, second, third, fourth, fifth] = scoreArr;
 console.log(second);
 console.log(first);
 console.log(fifth);
+
+//Spread Operator
+
+let copiedStudentObj = { ...student, graduationYear: 2026 }; //adding the new key and value
+console.log(copiedStudentObj);
+
+newCourses = ["Game Programming", "Game Engines 2"]; //new courses array
+
+combinedCourses = [ ...student.courses, ...newCourses ]; //merging
+console.log(combinedCourses);
