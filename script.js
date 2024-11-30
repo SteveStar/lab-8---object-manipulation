@@ -49,3 +49,19 @@ newCourses = ["Game Programming", "Game Engines 2"]; //new courses array
 
 combinedCourses = [ ...student.courses, ...newCourses ]; //merging
 console.log(combinedCourses);
+
+//Object methods
+
+student.addCourse = function(course) {
+    this.courses.push(course);
+    console.log(`\nCourse "${course}" has been added.`);
+};
+
+student.totalCourses = function() {
+    return this.courses.length;
+};
+
+student.studentInfo();
+student.addCourse("Creative writing");
+console.log(`Total number of courses: ${student.totalCourses()}, ${student.courses}`);
+
