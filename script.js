@@ -65,3 +65,8 @@ student.studentInfo();
 student.addCourse("Creative writing");
 console.log(`Total number of courses: ${student.totalCourses()}, ${student.courses}`);
 
+// BONUS ! !
+
+let averageScore = scoreArr.reduce((sum, score) => sum + score, 0) / scoreArr.length;
+
+console.log(`\nThe average score is: ${averageScore}`);
