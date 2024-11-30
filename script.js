@@ -33,3 +33,9 @@ function StudentDestruc({name, age, courses}) {
     console.log(message);
 }
 
+let scoreArr = [42,59,21,85,77];
+let [first, second, third, fourth, fifth] = scoreArr;
+
+console.log(second);
+console.log(first);
+console.log(fifth);
