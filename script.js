@@ -24,3 +24,12 @@ let studentJSON = JSON.parse(studentString);
 
 console.log(studentJSON);
 
+//Using Destructuring Assignment
+
+StudentDestruc(student);
+
+function StudentDestruc({name, age, courses}) {
+    const message = `\nMy name is ${name}, I'm ${age} years old and my course list is: ${courses}.\n`;
+    console.log(message);
+}
+
